@@ -6,6 +6,7 @@ import {
   Text,
   Stack,
   Image,
+  Tooltip,
 } from '@chakra-ui/react';
 import { Product } from '../../typings';
 
@@ -50,16 +51,18 @@ export function ProductCard({ data }: ProductCardProps) {
           <Text color="gray.500" fontSize="sm" textTransform="uppercase">
             {data.category.name}
           </Text>
-          <Heading
-            color="black"
-            fontSize="lg"
-            fontFamily="body"
-            fontWeight={500}
-            textAlign="center"
-            noOfLines={2}
-          >
-            {data.name}
-          </Heading>
+          <Tooltip label={data.name} placement="top">
+            <Heading
+              color="black"
+              fontSize="lg"
+              fontFamily="body"
+              fontWeight={500}
+              textAlign="center"
+              noOfLines={1}
+            >
+              {data.name}
+            </Heading>
+          </Tooltip>
           <Stack direction="row" align="center">
             <Text fontWeight={800} fontSize="3xl" color="black">
               $7

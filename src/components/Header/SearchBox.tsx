@@ -18,6 +18,7 @@ export function SearchBox({ value, setValue }: SearchBoxProps) {
       width="100%"
       maxWidth={{ lg: 400 }}
       alignSelf="center"
+      bg="gray.50"
       color="gray.800"
       position="relative"
       borderRadius="full"
@@ -27,7 +28,7 @@ export function SearchBox({ value, setValue }: SearchBoxProps) {
         color="gray.900"
         variant="unstyled"
         placeholder="Buscar por categoria..."
-        _placeholder={{ color: 'gray.400' }}
+        _placeholder={{ color: 'gray.500' }}
         px="4"
         mr="4"
         name="search"

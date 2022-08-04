@@ -1,9 +1,8 @@
 import {
-  Icon,
   Flex,
-  useBreakpointValue,
-  Box,
+  Icon,
   Stack,
+  useBreakpointValue,
   useDisclosure,
 } from '@chakra-ui/react';
 import { Dispatch, SetStateAction } from 'react';

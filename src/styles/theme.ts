@@ -5,12 +5,12 @@ export const theme = extendTheme({
     heading: 'Roboto',
     body: 'Roboto',
   },
-  // styles: {
-  //   global: {
-  //     body: {
-  //       bg: 'gray.900',
-  //       color: 'gray.50',
-  //     },
-  //   },
-  // },
+  styles: {
+    global: {
+      body: {
+        bg: 'gray.100',
+        color: 'gray.900',
+      },
+    },
+  },
 });

@@ -6,7 +6,7 @@ export type Image = {
 };
 
 export type Category = {
-  _id: string;
+  id: string;
   name: string;
 };
 
